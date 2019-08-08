@@ -58,3 +58,9 @@ class Account:
             list_of_dates.append(self.start_date + timedelta(days=i))
         return list_of_dates
 
+    def get_potential_hours(self):
+        return len(self.get_list_of_working_days()) * 8
+
+    def get_break_even_date(self):
+        pass
+
