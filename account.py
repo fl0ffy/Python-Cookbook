@@ -6,6 +6,7 @@ class Account:
     start_date = None
     end_date = None
     leave_hours = None
+    schedule = {"mon": 8, "tue": 8, "wed": 8, "thu": 8, "fri": 8, "sat": 0, "sun": 0}
     holidays = []
     vacation_days = []
 
@@ -23,6 +24,15 @@ class Account:
 
     def add_vacation_day(self, vacation_day: date or list):
         self.vacation_days.append(vacation_day)
+
+    def set_schedule(self, mon=8, tue=8, wed=8, thu=8, fri=8, sat=0, sun=0 ):
+        self.schedule["mon"] = mon
+        self.schedule["tue"] = tue
+        self.schedule["wed"] = wed
+        self.schedule["thu"] = thu
+        self.schedule["fri"] = fri
+        self.schedule["sat"] = sat
+        self.schedule["sun"] = sun
 
     def get_leave_hours(self):
         return self.leave_hours

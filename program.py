@@ -16,7 +16,7 @@ def main():
         date(2019, 12, 24),
         date(2019, 12, 25)
         ])
-    account1.add_vacation_day([
+    #account1.add_vacation_day([
         date(2019, 8, 22),
         date(2019, 8, 23)
         ])
