@@ -1,3 +1,4 @@
+import sys
 
 
 def collatz(number: int) -> int:
@@ -9,7 +10,12 @@ def collatz(number: int) -> int:
         return (3 * number) + 1
 
 
-num = int(input("Please enter a number: "))
+try:
+    num = int(input("Please enter a number: "))
+except ValueError:
+    print("Expected an integer.")
+    sys.exit()
+
 
 while True:
     num = collatz(num)
