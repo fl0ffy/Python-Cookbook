@@ -8,7 +8,7 @@ while True:
     print("Enter your move: (r)ock (p)aper (s)cissors or (q)uit")
 
     player_move = input()
-    program_move = random.choice("ROCK", "PAPER", "SCISSORS")
+    program_move = random.choice(["ROCK", "PAPER", "SCISSORS"])
 
     if player_move == 'q':
         break
